@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Us | GUVI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Got a question? Contact us by filling out this form and we will be in touch with you." />
+    <link rel="icon" type="image/x-icon" href="https://www.guvi.in/favicon.png" />
+    <link href="./src/output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white font-sans">
+    <div class="container mx-auto my-10 p-6 max-w-6xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-white p-10 rounded-lg">
+                <h2 class="text-3xl font-bold text-black">Contact Us</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Let us know your queries, feedbacks, and enquiries. We are here to
+                    support you 24/7.
+                </p>
+
+                <div class="mt-8 space-y-8">
+                    <div class="flex items-start">
+                        <div
+                            class="mr-6 bg-green-500 w-12 h-12 rounded-full flex justify-center items-center text-white text-2xl">
+                            <!-- call icon -->
+                            <img src="https://www.guvi.in/assets/Dln4fx0b-phone.webp" alt="" />
+                        </div>
+                        <div>
+                            <p class="font-semibold text-lg">Give us a call</p>
+                            <p class="text-gray-800 text-lg">+91 9736097320</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="mr-6 w-16 h-16 rounded-full flex justify-center items-center text-white text-2xl">
+                            <!-- email icon -->
+                            <img src="https://www.guvi.in/assets/DRGUPHXp-message.webp" alt="" />
+                        </div>
+                        <div>
+                            <p class="font-semibold text-lg">Write to us</p>
+                            <p class="text-gray-800 text-lg">cs@guvi.in</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="mr-6 w-16 h-16 rounded-full flex justify-center items-center text-white text-2xl">
+                            <!-- location icon -->
+                            <img src="https://www.guvi.in/assets/BrgqbmZY-location.webp" alt="" />
+                        </div>
+                        <div>
+                            <p class="font-semibold text-lg">Visit us in Chennai @</p>
+                            <p class="text-gray-800 text-lg">
+                                IITM Research park - phase 2, module #9, 3rd floor, D block,
+                                Kanagam Rd, Taramani, Chennai, Tamil Nadu 600113
+                            </p>
+                            <p class="font-semibold text-lg mt-4">Visit us in Noida @</p>
+                            <p class="text-gray-800 text-lg">
+                                A11, HCL Corporation Pvt. Ltd, Block A, Sector 3, Noida, Uttar
+                                Pradesh 201307
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg p-10 rounded-lg relative">
+                <div class="absolute top-0 right-0 mt-2 mr-2 text-green-500 text-4xl">
+                    <img src="https://www.guvi.in/assets/CxqwidpJ-form.webp" alt="green" width="150" height="160" />
+                </div>
+                <h2 class="text-3xl font-bold text-black">
+                    Say <span class="text-green-600">Hello!</span>
+                </h2>
+                <p class="mt-2 text-lg text-gray-600">
+                    Feel free to stop by and say hi!
+                </p>
+                <form id="contactForm" class="mt-6 space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name <span
+                                class="text-red-500">*</span></label>
+                        <input type="text" id="name" class="block w-full mt-1 p-3 border-gray-300 rounded-md shadow-sm"
+                            required />
+                        <span class="text-red-500 border-red-500 text-sm hidden" id="nameError">Name is required.</span>
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">E-mail id <span
+                                class="text-red-500">*</span></label>
+                        <input type="email" id="email" class="block w-full mt-1 p-3 border-gray-500 rounded-md"
+                            required />
+                        <span class="text-red-500 border-red-500 text-sm hidden" id="emailError">Invalid email
+                            address.</span>
+                    </div>
+
+                    <div>
+                        <label for="contactNumber" class="block text-sm font-medium text-gray-700">Contact Number <span
+                                class="text-red-500">*</span></label>
+                        <input type="tel" id="contactNumber" class="block w-full mt-1 p-3 border-gray-500 rounded-md"
+                            required />
+                        <span class="text-red-500 text-sm hidden" id="contactError">Contact number is required.</span>
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700">Subject <span
+                                class="text-red-500">*</span></label>
+                        <input type="text" id="subject"
+                            class="block w-full mt-1 p-3 border-gray-500 rounded-md shadow-sm" required />
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message <span
+                                class="text-red-500">*</span></label>
+                        <textarea id="message"
+                            class="block w-full mt-1 p-6 h-24 border-gray-500 rounded-md shadow-sm"></textarea>
+                        <span class="text-red-500 border-red-500 text-sm hidden" id="messageError">Message is
+                            required.</span>
+                    </div>
+
+                    <div>
+                        <button type="submit"
+                            class="w-full bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./formValidation.js"></script>
+</body>
+
+</html>
